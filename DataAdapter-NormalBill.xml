@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beanDataAdapter class="net.sf.jasperreports.data.bean.BeanDataAdapterImpl"><name>Data Adapter-NormalBill</name><factoryClass>com.cqqyd2014.print.pdf.factory.NormalBillFactory</factoryClass><methodName>getBeanCollection</methodName><useFieldDescription>false</useFieldDescription></beanDataAdapter>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="barcode20170716-90-20" pageWidth="255" pageHeight="56" whenNoDataType="BlankPage" columnWidth="249" leftMargin="3" rightMargin="3" topMargin="3" bottomMargin="3" uuid="1508a523-a741-465c-94dc-f2034d07070b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter-prepackage_barcode.xml"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="create_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[create_userid]]></fieldDescription>
+	</field>
+	<field name="time_last" class="java.lang.Long">
+		<fieldDescription><![CDATA[time_last]]></fieldDescription>
+	</field>
+	<field name="memo_barcodes" class="java.lang.String">
+		<fieldDescription><![CDATA[memo_barcodes]]></fieldDescription>
+	</field>
+	<field name="un_package_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[un_package_userid]]></fieldDescription>
+	</field>
+	<field name="com_id" class="java.lang.String">
+		<fieldDescription><![CDATA[com_id]]></fieldDescription>
+	</field>
+	<field name="num" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[num]]></fieldDescription>
+	</field>
+	<field name="sended" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[sended]]></fieldDescription>
+	</field>
+	<field name="un_package_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[un_package_dat]]></fieldDescription>
+	</field>
+	<field name="actual_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[actual_weight]]></fieldDescription>
+	</field>
+	<field name="effective" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[effective]]></fieldDescription>
+	</field>
+	<field name="printed" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[printed]]></fieldDescription>
+	</field>
+	<field name="prepackage_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[prepackage_dat]]></fieldDescription>
+	</field>
+	<field name="memo_names" class="java.lang.String">
+		<fieldDescription><![CDATA[memo_names]]></fieldDescription>
+	</field>
+	<field name="wh_id" class="java.lang.String">
+		<fieldDescription><![CDATA[wh_id]]></fieldDescription>
+	</field>
+	<field name="create_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[create_dat]]></fieldDescription>
+	</field>
+	<field name="package_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[package_userid]]></fieldDescription>
+	</field>
+	<field name="package_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[package_weight]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="prepackage_barcode" class="java.lang.String">
+		<fieldDescription><![CDATA[prepackage_barcode]]></fieldDescription>
+	</field>
+	<field name="packaged" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[packaged]]></fieldDescription>
+	</field>
+	<field name="send_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[send_dat]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<componentElement>
+				<reportElement key="" mode="Opaque" x="0" y="0" width="210" height="29" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="2bfdc885-a044-49e6-bd7c-3c5991fb196d">
+					<property name="com.jaspersoft.studio.unit.barWidth" value="pixel"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="6" barHeight="150">
+					<jr:codeExpression><![CDATA[$F{prepackage_barcode}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="11" y="29" width="188" height="19" uuid="2de1ce2b-d6b4-4a99-9d7e-9938cd2d80ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="fangsong" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prepackage_barcode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="-1" width="30" height="30" uuid="63c7814c-ec8d-4340-9710-373c1e4aa786"/>
+				<textElement>
+					<font fontName="fangsong" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[预]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

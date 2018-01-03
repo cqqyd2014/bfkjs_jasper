@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="deliver_sub" language="groovy" pageWidth="555" pageHeight="228" orientation="Landscape" columnWidth="515" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="fe1367b1-1bae-46a0-93e5-89ab91a5ef85">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter-DeliverBill.xml"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="order_no" class="java.lang.String">
+		<fieldDescription><![CDATA[order_no]]></fieldDescription>
+	</field>
+	<field name="goods_name" class="java.lang.String">
+		<fieldDescription><![CDATA[goods_name]]></fieldDescription>
+	</field>
+	<field name="com_id" class="java.lang.String">
+		<fieldDescription><![CDATA[com_id]]></fieldDescription>
+	</field>
+	<field name="yue" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[yue]]></fieldDescription>
+	</field>
+	<field name="goods_id" class="java.lang.String">
+		<fieldDescription><![CDATA[goods_id]]></fieldDescription>
+	</field>
+	<field name="sended_count" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[sended_count]]></fieldDescription>
+	</field>
+	<field name="net_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[net_weight]]></fieldDescription>
+	</field>
+	<field name="uuid" class="java.lang.String">
+		<fieldDescription><![CDATA[uuid]]></fieldDescription>
+	</field>
+	<field name="unit" class="java.lang.String">
+		<fieldDescription><![CDATA[unit]]></fieldDescription>
+	</field>
+	<field name="goods_barcode" class="java.lang.String">
+		<fieldDescription><![CDATA[goods_barcode]]></fieldDescription>
+	</field>
+	<field name="package_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[package_weight]]></fieldDescription>
+	</field>
+	<field name="gross_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[gross_weight]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="seq" class="java.lang.String">
+		<fieldDescription><![CDATA[seq]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="7c24fb26-71ac-4ff8-ba14-9e9cbbe927d1"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[商品名称]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="515" height="1" uuid="2cb9375e-b935-40a9-948e-aefaabf9bce0"/>
+			</line>
+			<staticText>
+				<reportElement x="141" y="1" width="69" height="20" uuid="f3717f8a-cd1e-45e8-bb44-f1fdb38ce78c"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[商品条码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="36" height="20" uuid="f77e35a2-5bfe-49a8-80df-394544bf6a4e"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[单位]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="140" height="20" uuid="92c741d3-4a58-4f03-bd21-a8f2083a5050"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{goods_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="36" height="20" uuid="c18c8d7a-69eb-4631-9c24-4a7179bf41be"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unit}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="140" y="0" width="300" height="40" uuid="381b1144-4caa-4db2-b670-a3e4335af4e8"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="true" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{goods_barcode}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<line>
+				<reportElement x="0" y="40" width="515" height="1" uuid="d326e58d-fe9a-480d-9144-b02ad47a96f5"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

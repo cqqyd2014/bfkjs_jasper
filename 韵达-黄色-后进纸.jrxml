@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="yd20151214" language="groovy" pageWidth="652" pageHeight="360" columnWidth="612" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="db4ba37b-a1e6-4549-b26f-5e9e88cd0bf2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter-NormalBill.xml"/>
+	<style name="zh_CN" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sender_province" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_province]]></fieldDescription>
+	</field>
+	<field name="reciever_city" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_city]]></fieldDescription>
+	</field>
+	<field name="sender_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_addr]]></fieldDescription>
+	</field>
+	<field name="receiver" class="java.lang.String">
+		<fieldDescription><![CDATA[receiver]]></fieldDescription>
+	</field>
+	<field name="receiver_tell" class="java.lang.String">
+		<fieldDescription><![CDATA[receiver_tell]]></fieldDescription>
+	</field>
+	<field name="reciever_com" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_com]]></fieldDescription>
+	</field>
+	<field name="memo" class="java.lang.String">
+		<fieldDescription><![CDATA[memo]]></fieldDescription>
+	</field>
+	<field name="reciever_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_addr]]></fieldDescription>
+	</field>
+	<field name="sender_post" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_post]]></fieldDescription>
+	</field>
+	<field name="sender_mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_mobile]]></fieldDescription>
+	</field>
+	<field name="print_dat" class="java.lang.String">
+		<fieldDescription><![CDATA[print_dat]]></fieldDescription>
+	</field>
+	<field name="sender_com" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_com]]></fieldDescription>
+	</field>
+	<field name="package_memo" class="java.lang.String">
+		<fieldDescription><![CDATA[package_memo]]></fieldDescription>
+	</field>
+	<field name="sender_city" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_city]]></fieldDescription>
+	</field>
+	<field name="sender" class="java.lang.String">
+		<fieldDescription><![CDATA[sender]]></fieldDescription>
+	</field>
+	<field name="reciever_province" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_province]]></fieldDescription>
+	</field>
+	<field name="reciever_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_full_address]]></fieldDescription>
+	</field>
+	<field name="reciever_mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_mobile]]></fieldDescription>
+	</field>
+	<field name="sender_tell" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_tell]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="sender_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_full_address]]></fieldDescription>
+	</field>
+	<field name="reciever_post" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_post]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="314" splitType="Stretch">
+			<textField>
+				<reportElement style="zh_CN" x="325" y="59" width="208" height="20" uuid="740d8995-ae3a-4fb1-94e5-d7c18f6ac925"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receiver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="32" y="59" width="123" height="20" uuid="236bfa6b-75af-4605-b337-52053e9d0577"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="32" y="79" width="201" height="20" uuid="dd8ace30-9aa3-40a9-a75e-67584da6127c"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_com}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="32" y="99" width="201" height="50" uuid="eac8fefa-f359-4acf-852d-5dc14af92a22"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_full_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="32" y="195" width="183" height="80" uuid="48607d69-2b09-4054-aba6-08fee5b68923"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{memo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="6" y="293" width="123" height="20" uuid="28b97a4a-dcf8-45cd-a04a-45c1a60d570e"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="32" y="149" width="132" height="20" uuid="13ebff54-663c-4a52-89de-a00f530ce9c8"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender_tell}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="325" y="79" width="208" height="70" uuid="d365ec60-49b9-4ca1-bb6b-d5b6a27074cd"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reciever_full_address}+" "+$F{reciever_com}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="325" y="149" width="208" height="20" uuid="1d5a5c48-84be-4fa3-aaae-a312f201f8f0"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reciever_mobile}+"/"+$F{receiver_tell}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="zh_CN" x="67" y="293" width="123" height="20" uuid="bc2ca6af-c1b1-4cb1-ab3f-e0682b4b1cbe"/>
+				<textElement>
+					<font fontName="MSYH" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{print_dat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

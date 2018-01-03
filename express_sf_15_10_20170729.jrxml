@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="express_sf_15_10_20170729" pageWidth="283" pageHeight="425" columnWidth="283" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="01b2c878-6a4b-48d2-aa83-99ff7d455f2d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sf.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="path_of_report" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sender_province" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_province]]></fieldDescription>
+	</field>
+	<field name="e_flag" class="java.lang.String">
+		<fieldDescription><![CDATA[e_flag]]></fieldDescription>
+	</field>
+	<field name="sender_full" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_full]]></fieldDescription>
+	</field>
+	<field name="receiver_tell" class="java.lang.String">
+		<fieldDescription><![CDATA[receiver_tell]]></fieldDescription>
+	</field>
+	<field name="reciever_full" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_full]]></fieldDescription>
+	</field>
+	<field name="deliver_dat" class="java.lang.String">
+		<fieldDescription><![CDATA[deliver_dat]]></fieldDescription>
+	</field>
+	<field name="memo" class="java.lang.String">
+		<fieldDescription><![CDATA[memo]]></fieldDescription>
+	</field>
+	<field name="month_pay_account" class="java.lang.String">
+		<fieldDescription><![CDATA[month_pay_account]]></fieldDescription>
+	</field>
+	<field name="sender_post" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_post]]></fieldDescription>
+	</field>
+	<field name="express_no" class="java.lang.String">
+		<fieldDescription><![CDATA[express_no]]></fieldDescription>
+	</field>
+	<field name="sender_mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_mobile]]></fieldDescription>
+	</field>
+	<field name="sender_com" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_com]]></fieldDescription>
+	</field>
+	<field name="package_memo" class="java.lang.String">
+		<fieldDescription><![CDATA[package_memo]]></fieldDescription>
+	</field>
+	<field name="business_type" class="java.lang.String">
+		<fieldDescription><![CDATA[business_type]]></fieldDescription>
+	</field>
+	<field name="sender_tell" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_tell]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="sender_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_full_address]]></fieldDescription>
+	</field>
+	<field name="reciever_city" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_city]]></fieldDescription>
+	</field>
+	<field name="sender_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_addr]]></fieldDescription>
+	</field>
+	<field name="receiver" class="java.lang.String">
+		<fieldDescription><![CDATA[receiver]]></fieldDescription>
+	</field>
+	<field name="reciever_com" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_com]]></fieldDescription>
+	</field>
+	<field name="reciever_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_addr]]></fieldDescription>
+	</field>
+	<field name="destination_code" class="java.lang.String">
+		<fieldDescription><![CDATA[destination_code]]></fieldDescription>
+	</field>
+	<field name="sender_city" class="java.lang.String">
+		<fieldDescription><![CDATA[sender_city]]></fieldDescription>
+	</field>
+	<field name="sender" class="java.lang.String">
+		<fieldDescription><![CDATA[sender]]></fieldDescription>
+	</field>
+	<field name="reciever_province" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_province]]></fieldDescription>
+	</field>
+	<field name="reciever_full_address" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_full_address]]></fieldDescription>
+	</field>
+	<field name="reciever_mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_mobile]]></fieldDescription>
+	</field>
+	<field name="package_detial" class="java.lang.String">
+		<fieldDescription><![CDATA[package_detial]]></fieldDescription>
+	</field>
+	<field name="reciever_post" class="java.lang.String">
+		<fieldDescription><![CDATA[reciever_post]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="425" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="37" width="283" height="1" uuid="4bed2fec-bb9a-4b9c-b7f3-d142f57258f3">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="110" y="0" width="100" height="37" uuid="23582089-c317-40fc-8553-f55ccd00ceab"/>
+				<textElement>
+					<font fontName="fangsong" size="25"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{e_flag}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="93" width="283" height="1" uuid="23b25418-7a1b-465b-b353-31d38556983b">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<componentElement>
+				<reportElement x="10" y="40" width="198" height="53" uuid="a833f5b8-e3b7-4cc6-8558-25988e5127ec">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.barHeight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.barWidth" value="pixel"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="true" checksumRequired="false" barWidth="3" barHeight="53">
+					<jr:codeExpression><![CDATA[$F{express_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<line>
+				<reportElement x="220" y="37" width="1" height="56" uuid="04dde43e-5649-4c9e-9719-da276648496b"/>
+			</line>
+			<line>
+				<reportElement x="220" y="59" width="62" height="1" uuid="2b5ad63c-e8ec-4a84-afb0-f499b110f737"/>
+			</line>
+			<textField>
+				<reportElement x="220" y="38" width="63" height="21" uuid="0e51c320-c6b5-4703-90ef-472d153a1987"/>
+				<textElement>
+					<font fontName="fangsong" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{business_type}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="133" width="283" height="1" uuid="79931928-7c55-4063-84ea-2a9e0098307f">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="170" width="283" height="1" uuid="7b1f1573-b835-480b-b4eb-066456c7f0af"/>
+			</line>
+			<line>
+				<reportElement x="0" y="195" width="283" height="1" uuid="4af05d9b-6e08-4f0e-829b-7d7582d0dbd5">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="20" y="94" width="1" height="102" uuid="f3bb45bc-70d8-4121-900c-e8619f8f7e6b"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="98" width="6" height="39" uuid="0b1cee2d-e948-4336-975f-2aa5cee61010"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[目的地]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="70" width="35" height="17" uuid="fb89f423-ca6a-4da2-88bb-2be302fef89a"/>
+				<textElement>
+					<font fontName="fangsong" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="170" width="6" height="39" uuid="8c6715c4-a8c9-4389-af7f-eb970da08233"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[寄件人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="134" width="6" height="39" uuid="9234a2bc-cba3-4187-b27d-13c14f2d7ea5"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[收件人]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="94" width="238" height="39" uuid="4bfb2704-cb35-45c3-8859-2b06eb2850a4"/>
+				<textElement>
+					<font fontName="fangsong" size="27"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{destination_code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="134" width="260" height="36" uuid="8aa8c92e-a514-4f31-b77b-92b15fe28df1"/>
+				<textElement>
+					<font fontName="fangsong" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receiver}+" "+$F{receiver_tell}+" "+$F{reciever_mobile}+" "+$F{reciever_full_address}+" "+$F{reciever_com}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="230" width="230" height="1" uuid="42eeaced-63f2-4c6a-a9a5-a6562928693d"/>
+			</line>
+			<line>
+				<reportElement x="0" y="255" width="283" height="1" uuid="2bffd108-6912-4cad-a509-6e24005eca48">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="230" y="170" width="1" height="85" uuid="20b98590-fabf-4cbb-bed3-d6b3f1c05926"/>
+			</line>
+			<staticText>
+				<reportElement x="231" y="197" width="42" height="12" uuid="191dcfe8-73ec-4bf1-98a7-274d4442edf1"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[签名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="244" width="33" height="12" uuid="0a659290-b22e-481c-8b7f-cb7f4d316b35"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[月  日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="20" y="173" width="210" height="22" uuid="c20d4df8-f0e5-4d07-b21a-9f9471992318"/>
+				<textElement>
+					<font fontName="fangsong" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender}+" "+$F{sender_mobile}+" "+$F{sender_full_address}+" "+$F{sender_com}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="203" width="100" height="18" uuid="9423fae3-9419-4ad4-b277-af4038551bc3"/>
+				<textElement>
+					<font fontName="fangsong" isBold="true"/>
+				</textElement>
+				<text><![CDATA[付款方式：寄付月结]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="216" width="100" height="13" uuid="24bad38d-9fb9-4f17-953b-c6906d54144e"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[月结账号：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="43" y="216" width="77" height="13" uuid="0676142c-2b31-43ab-9501-ec86a343d4dc"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{month_pay_account}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="203" width="41" height="13" uuid="22f9a500-20cc-438f-9831-2ca65d93fb80"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[件数：1  ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="160" y="230" width="1" height="25" uuid="dce54a18-1979-40c9-8ca9-f5d9623092b9"/>
+			</line>
+			<staticText>
+				<reportElement x="160" y="232" width="48" height="20" uuid="ec9816ac-29ec-4ae5-b30c-821f8ebc2200"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[寄件日期：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="166" y="243" width="55" height="13" uuid="57170e19-85c6-49a4-938a-f87d4ee575ae"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deliver_dat}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="20" y="230" width="1" height="25" uuid="3f6ce81f-e36e-4c37-8778-2712a7494dfc"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="230" width="6" height="39" uuid="145f3717-737a-48bc-bb75-db2b8d8f716f"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[寄托物]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="21" y="231" width="129" height="21" uuid="3b32cc4b-ed29-40ca-96e4-9dac689745e7"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{package_memo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="298" width="283" height="1" uuid="ffea84ad-f4f0-4ced-94c0-e8ae65d09f68">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="326" width="283" height="1" uuid="5a349926-3272-4132-bb0c-12bab0af4043">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="70" y="256" width="1" height="42" uuid="6871e344-dd06-4973-85c2-bb6b6cb37063"/>
+			</line>
+			<image>
+				<reportElement x="10" y="260" width="40" height="35" uuid="facca814-9673-4239-85df-e84b59ed310e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA[$P{path_of_report}+"sf.png"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="90" y="260" width="172" height="38" uuid="fe1895d4-3fdd-43a3-8b1e-4a6d90e15403">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.barHeight" value="pixel"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="true" checksumRequired="false" barHeight="42">
+					<jr:codeExpression><![CDATA[$F{express_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<line>
+				<reportElement x="0" y="354" width="283" height="1" uuid="20252b56-e716-4b92-a453-34c8c0cd88c0">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="20" y="299" width="1" height="55" uuid="27a9332b-8bc9-494e-89f6-b144a0b25394"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="299" width="6" height="39" uuid="b92ae217-0650-4430-abba-9a361fdae4f5"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[寄件人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="327" width="6" height="39" uuid="aae050af-5ab0-4f22-95b3-798b496084ea"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[收件人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="356" width="48" height="14" uuid="91bf640a-9729-4cc3-9cc2-72f972070f4a"/>
+				<textElement>
+					<font fontName="fangsong" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[自定义区]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="370" width="282" height="54" uuid="9eeaae53-596d-4009-a944-e4cccdba6ba0"/>
+				<textElement>
+					<font fontName="fangsong" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{package_detial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="303" width="252" height="24" uuid="e4548090-f37e-4bbc-9d72-8a67e9b2c7b1"/>
+				<textElement>
+					<font fontName="fangsong" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sender}+" "+$F{sender_mobile}+" "+$F{sender_full_address}+" "+$F{sender_com}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="327" width="252" height="24" uuid="64cc64df-4eba-4185-bc59-804daef7b746"/>
+				<textElement>
+					<font fontName="fangsong" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receiver}+" "+$F{receiver_tell}+" "+$F{reciever_mobile}+" "+$F{reciever_full_address}+" "+$F{reciever_com}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="80" width="198" height="14" uuid="dab02b0f-a721-4469-b4d5-d176a9c32418"/>
+				<textElement textAlignment="Center">
+					<font fontName="fangsong" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{express_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="71" y="284" width="198" height="14" uuid="b6b4b1c7-0ee7-452b-959b-007d3a05cea9"/>
+				<textElement textAlignment="Center">
+					<font fontName="fangsong" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{express_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="216" width="41" height="13" uuid="2cefa6a9-15fc-4aea-b4d5-5398c33c4ba9"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[运费： ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="203" width="46" height="13" uuid="cb6473d8-4e06-4eb1-8786-2462d65985e4"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[费用合计： ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="216" width="46" height="13" uuid="275f254a-55e8-419c-8be2-098e06e4e1c0"/>
+				<textElement>
+					<font fontName="fangsong" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[计费重量： ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

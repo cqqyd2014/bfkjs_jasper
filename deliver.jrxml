@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="deliver" language="groovy" pageWidth="595" pageHeight="421" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" isIgnorePagination="true" uuid="ceaed107-8855-4518-83b3-d778c02b3188">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="53"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter-DeliverBill.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="b5b20247-5f06-438d-b01d-fa63719eda69"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Documents and Settings\\Administrator\\桌面\\iReport-5.6.0\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="param_deliverbill" class="com.cqqyd2014.order.model.DeliverBill"/>
+	<parameter name="IMAGES_DIR" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="create_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[create_userid]]></fieldDescription>
+	</field>
+	<field name="logistics_fb_code" class="java.lang.String">
+		<fieldDescription><![CDATA[logistics_fb_code]]></fieldDescription>
+	</field>
+	<field name="receive_com" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_com]]></fieldDescription>
+	</field>
+	<field name="num" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[num]]></fieldDescription>
+	</field>
+	<field name="express_no" class="java.lang.String">
+		<fieldDescription><![CDATA[express_no]]></fieldDescription>
+	</field>
+	<field name="order_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[order_dat]]></fieldDescription>
+	</field>
+	<field name="send_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[send_userid]]></fieldDescription>
+	</field>
+	<field name="pre_package_barcode" class="java.lang.String">
+		<fieldDescription><![CDATA[pre_package_barcode]]></fieldDescription>
+	</field>
+	<field name="logistics_fb_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[logistics_fb_dat]]></fieldDescription>
+	</field>
+	<field name="dbds" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[dbds]]></fieldDescription>
+	</field>
+	<field name="receive_user" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_user]]></fieldDescription>
+	</field>
+	<field name="deliver_no" class="java.lang.String">
+		<fieldDescription><![CDATA[deliver_no]]></fieldDescription>
+	</field>
+	<field name="com_id" class="java.lang.String">
+		<fieldDescription><![CDATA[com_id]]></fieldDescription>
+	</field>
+	<field name="sended" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[sended]]></fieldDescription>
+	</field>
+	<field name="logistics_fb_status" class="java.lang.String">
+		<fieldDescription><![CDATA[logistics_fb_status]]></fieldDescription>
+	</field>
+	<field name="express_com_name" class="java.lang.String">
+		<fieldDescription><![CDATA[express_com_name]]></fieldDescription>
+	</field>
+	<field name="package_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[package_dat]]></fieldDescription>
+	</field>
+	<field name="receive_addr_full" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_addr_full]]></fieldDescription>
+	</field>
+	<field name="send_user_assgin_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[send_user_assgin_dat]]></fieldDescription>
+	</field>
+	<field name="cancel_confirm_memo" class="java.lang.String">
+		<fieldDescription><![CDATA[cancel_confirm_memo]]></fieldDescription>
+	</field>
+	<field name="receive_district" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_district]]></fieldDescription>
+	</field>
+	<field name="cancel_status" class="java.lang.String">
+		<fieldDescription><![CDATA[cancel_status]]></fieldDescription>
+	</field>
+	<field name="receive_addr" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_addr]]></fieldDescription>
+	</field>
+	<field name="cancel_request_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[cancel_request_dat]]></fieldDescription>
+	</field>
+	<field name="carton_type" class="java.lang.String">
+		<fieldDescription><![CDATA[carton_type]]></fieldDescription>
+	</field>
+	<field name="receive_city" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_city]]></fieldDescription>
+	</field>
+	<field name="send_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[send_dat]]></fieldDescription>
+	</field>
+	<field name="vehicle_name" class="java.lang.String">
+		<fieldDescription><![CDATA[vehicle_name]]></fieldDescription>
+	</field>
+	<field name="express_com" class="java.lang.String">
+		<fieldDescription><![CDATA[express_com]]></fieldDescription>
+	</field>
+	<field name="order_no" class="java.lang.String">
+		<fieldDescription><![CDATA[order_no]]></fieldDescription>
+	</field>
+	<field name="memo_barcodes" class="java.lang.String">
+		<fieldDescription><![CDATA[memo_barcodes]]></fieldDescription>
+	</field>
+	<field name="receive_province" class="java.lang.String">
+		<fieldDescription><![CDATA[receive_province]]></fieldDescription>
+	</field>
+	<field name="cancel_confrim_dat" class="java.util.Date">
+		<fieldDescription><![CDATA[cancel_confrim_dat]]></fieldDescription>
+	</field>
+	<field name="effective" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[effective]]></fieldDescription>
+	</field>
+	<field name="wh_name" class="java.lang.String">
+		<fieldDescription><![CDATA[wh_name]]></fieldDescription>
+	</field>
+	<field name="memo_names" class="java.lang.String">
+		<fieldDescription><![CDATA[memo_names]]></fieldDescription>
+	</field>
+	<field name="logistics_fb_memo" class="java.lang.String">
+		<fieldDescription><![CDATA[logistics_fb_memo]]></fieldDescription>
+	</field>
+	<field name="deliver_bill_status" class="java.lang.String">
+		<fieldDescription><![CDATA[deliver_bill_status]]></fieldDescription>
+	</field>
+	<field name="cancel_confirm_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[cancel_confirm_userid]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="vehicle_id" class="java.lang.String">
+		<fieldDescription><![CDATA[vehicle_id]]></fieldDescription>
+	</field>
+	<field name="seq" class="java.lang.String">
+		<fieldDescription><![CDATA[seq]]></fieldDescription>
+	</field>
+	<field name="com_name" class="java.lang.String">
+		<fieldDescription><![CDATA[com_name]]></fieldDescription>
+	</field>
+	<field name="cancel_request_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[cancel_request_userid]]></fieldDescription>
+	</field>
+	<field name="carton_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[carton_weight]]></fieldDescription>
+	</field>
+	<field name="actual_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[actual_weight]]></fieldDescription>
+	</field>
+	<field name="create_username" class="java.lang.String">
+		<fieldDescription><![CDATA[create_username]]></fieldDescription>
+	</field>
+	<field name="cancel_request_memo" class="java.lang.String">
+		<fieldDescription><![CDATA[cancel_request_memo]]></fieldDescription>
+	</field>
+	<field name="wh_id" class="java.lang.String">
+		<fieldDescription><![CDATA[wh_id]]></fieldDescription>
+	</field>
+	<field name="package_userid" class="java.lang.String">
+		<fieldDescription><![CDATA[package_userid]]></fieldDescription>
+	</field>
+	<field name="package_weight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[package_weight]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="126">
+			<staticText>
+				<reportElement x="149" y="0" width="256" height="20" uuid="560ba1f6-1970-4e9b-b50f-8da492d1785b"/>
+				<textElement>
+					<font fontName="fangsong" size="14" isBold="true" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[重庆勤驿达进出口有限责任公司发货单]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-2" y="0" width="96" height="42" uuid="07c1cab5-c934-4d81-a031-77b1a67ff548"/>
+				<imageExpression><![CDATA[$P{IMAGES_DIR} + "hwsh.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="256" y="44" width="72" height="20" uuid="2a571d90-6662-44e5-8d7f-c0c73758cf4d"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[发货单号：]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="328" y="44" width="225" height="40" uuid="4740b90f-7fad-4854-ab3d-0bf692fa33db"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="true" checksumRequired="false" barHeight="50">
+					<jr:codeExpression><![CDATA[$F{deliver_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="82" y="44" width="174" height="20" uuid="9a409009-eadc-43fa-8bb6-e754edebe1c7"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{order_dat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="44" width="72" height="20" uuid="ec99caf9-c418-4be9-90e2-4962e33ad783"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[订单日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="84" width="72" height="20" uuid="914dce29-7de7-496f-8126-9fc9af415504"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[物流企业：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="84" width="174" height="20" uuid="47f2e3d8-e087-4c47-aa8a-ee2cd0ebcdf2"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{express_com_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="256" y="84" width="72" height="20" uuid="84f2fe57-a17c-4104-bb0b-6c044e6bd3d1"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[物流单号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="64" width="72" height="20" uuid="65aabdd1-ead9-4323-8f3f-eb8a6808d35b"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[订单号：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="64" width="174" height="20" uuid="a673fbbf-d278-4494-9947-2f8fce3b2250"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{order_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="105" width="72" height="20" uuid="69e7d423-1982-4adc-afcf-b4d7815a7af0"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<text><![CDATA[发货序号：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="105" width="174" height="20" uuid="bd839fb9-8d11-47aa-8415-43cf679e57ff"/>
+				<textElement>
+					<font fontName="fangsong" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{seq}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="328" y="84" width="225" height="40" uuid="d787f1d3-d102-42bd-aa2b-762486f406de">
+					<property name="com.jaspersoft.studio.unit.barWidth" value="pixel"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="true" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{express_no}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+		<band height="28" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="5" width="554" height="22" uuid="b2257a10-f085-442b-a93e-aed245862a2f"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{dbds})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "deliver_sub.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
